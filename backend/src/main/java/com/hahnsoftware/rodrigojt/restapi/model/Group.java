@@ -1,14 +1,12 @@
 package com.hahnsoftware.rodrigojt.restapi.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
+
+import jakarta.persistence.*;
+import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -17,7 +15,7 @@ import lombok.RequiredArgsConstructor;
 @Table(name = "user_group")
 public class Group {
 
-	@Id
+    @Id
     @GeneratedValue
     private Long id;
     @NonNull
@@ -32,5 +30,4 @@ public class Group {
 
     @OneToMany(fetch = FetchType.EAGER, cascade=CascadeType.ALL)
     private Set<Event> events;
-	
 }

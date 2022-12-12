@@ -19,7 +19,7 @@ import java.util.Set;
 @Entity
 public class Event {
 
-	@Id
+    @Id
     @GeneratedValue
     private Long id;
     private Instant date;
@@ -27,5 +27,4 @@ public class Event {
     private String description;
     @ManyToMany
     private Set<User> attendees;
-	
 }
