@@ -11,6 +11,7 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Home/>}/>
         <Route path='/groups' exact={true} element={<GroupList/>}/>
+        <Route path='/groups/:id' element={<GroupEdit/>}/>
       </Routes>
     </Router>
   )
