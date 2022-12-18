@@ -62,7 +62,7 @@ const GroupList = () => {
       <AppNavbar/>
       <Container fluid>
         <div className="float-end">
-          <Button color="success" tag={Link} to="/groups/new">Add Group</Button>
+          <Button color="success" tag={Link} to="/groups/new">New Client</Button>
         </div>
         <h3>Client Database</h3>
         <Table className="mt-4">

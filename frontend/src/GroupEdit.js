@@ -45,7 +45,7 @@ const GroupEdit = () => {
     navigate('/groups');
   }
 
-  const title = <h2>{group.id ? 'Edit Group' : 'Add Group'}</h2>;
+  const title = <h2>{group.id ? 'Edit Group' : 'New Client'}</h2>;
 
   return (<div>
       <AppNavbar/>
