@@ -9,8 +9,7 @@ const GroupEdit = () => {
     address: '',
     city: '',
     stateOrProvince: '',
-    country: '',
-    postalCode: ''
+    country: ''
   };
   const [group, setGroup] = useState(initialFormState);
   const navigate = useNavigate();
@@ -76,11 +75,6 @@ const GroupEdit = () => {
             <FormGroup className="col-md-5 mb-3">
               <Label for="country">Country</Label>
               <Input type="text" name="country" id="country" value={group.country || ''}
-                     onChange={handleChange} autoComplete="address-level1"/>
-            </FormGroup>
-            <FormGroup className="col-md-3 mb-3">
-              <Label for="country">Postal Code</Label>
-              <Input type="text" name="postalCode" id="postalCode" value={group.postalCode || ''}
                      onChange={handleChange} autoComplete="address-level1"/>
             </FormGroup>
           </div>
